@@ -1,0 +1,137 @@
+#startPage, #gameModePage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet;
+}
+
+.start-game-box {
+    position: relative;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 240px;
+    border-bottom-right-radius: 240px;
+    display: flex;
+    box-shadow: 0 15px 0 rgb(162, 103, 216),
+    0 45px 0 rgba(8, 8, 8, 0.8);
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background: white;
+    width: 440px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.start-game-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(181, 84, 255, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.game-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-bottom-left-radius: 240px;
+    border-bottom-right-radius: 240px;
+    background-color: blueviolet;  
+    border-bottom: 8px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-img img {
+    z-index: 2;
+    width: 100%;
+    animation: translateGameimg 4s ease-in-out infinite;
+}
+
+@keyframes translateGameimg {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.game-name-title {
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.play-btn {
+    color: rgb(30, 30, 30);
+    background: rgb(255, 255, 255);
+    border: 1px solid blueviolet;
+    padding: 0.6rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 24px;
+    font-weight: 700;
+    transition: 0.6s
+}
+
+.play-btn:hover {
+    transform:  scale(1.2, 1.2);
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white
+}
+
+.play-mode .play-btn {
+    width: 300px;
+    font-size: 1rem;
+    padding: 1.4rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Select Game Mode Page */
+
+.gameMode {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.game-mode-btn .btn-img {
+    height: 100%;
+    background-color: rgb(229, 209, 255);
+    padding: 1rem;
+}
+
+.game-mode-btn .btn-img img {
+    width: 40px;
+    height: 40px;
+}
+
+.game-mode-btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+    color: rgb(229, 209, 255);
+    background-color: rgb(44, 44, 44);
+    width: 300px;
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    padding: 0 1rem 0 0;
+    border-radius: 10px;
+    border: 2px solid black;
+}

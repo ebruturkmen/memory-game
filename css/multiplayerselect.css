@@ -1,0 +1,22 @@
+#player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.multiplayer-boxes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 14px 60px;
+}

@@ -1,0 +1,68 @@
+body {
+    background-color: blueviolet;
+    height: 100vh;
+    padding: 20px;
+}
+
+#singleGame {
+    width: 700px;
+    gap: 4rem;
+}
+
+.players-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.player-area {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgb(244, 236, 255);
+    width: max-content;
+    border: 2px solid rgb(64, 11, 124);
+    border-radius: 40px;
+    padding: 0.1rem 6rem 0.1rem 0.2rem;
+}
+
+.single-game-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.player-img {
+    width: 40px;
+    height: 40px;
+}
+
+.player-img .player-boxes {
+    width: 100%;
+}
+
+.player-img .player-boxes .player-box {
+    width: 100%;
+}
+
+.player-img img {
+    width: 100%;
+}
+
+#firstPlayerUsername, #secondPlayerUsername {
+    font-size: 12px;
+    color: rgb(64, 11, 124);
+    text-transform: uppercase;
+}
+
+#winnerText {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 122);
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+}

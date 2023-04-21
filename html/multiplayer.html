@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/selectplayer.css">
+    <link rel="stylesheet" href="../css/multiplayerselect.css">
+</head>
+<body>
+    <section id="player">
+        <div class="multiplayer-boxes">
+            <div id="player1-box" class="select-player player1">
+                <h2>Player 1</h2>
+                <div class="input-group">
+                    <label for="playerName">Enter your player name:</label>
+                    <input type="text" class="player-name" id="firstPlayerName">
+                </div>
+                <div class="player-img">
+                    <div class="player-boxes">
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/man.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/man1.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/man2.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/man3.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/man4.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/man5.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/woman.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/woman1.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/woman2.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/woman3.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/woman4.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacter(this)" src="../images/player/woman5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="player2-box" class="select-player player2">
+                <h2>Player 2</h2>
+                <div class="input-group">
+                    <label for="playerName">Enter your player name:</label>
+                    <input type="text" class="player-name" id="secondPlayerName">
+                </div>
+                <div class="player-img">
+                    <div class="player-boxes">
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/man.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/man1.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/man2.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/man3.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/man4.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/man5.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/woman.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/woman1.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/woman2.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/woman3.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/woman4.png" alt="">
+                        </div>
+                        <div class="player-box">
+                            <img onclick="selectCharacterSecond(this)" src="../images/player/woman5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="player1game.html" class="play-btn" onclick="playerName()">PLAY</a>
+    </section>
+    <script src="../js/multiplayer.js"></script>
+</body>
+</html>

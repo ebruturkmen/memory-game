@@ -1,0 +1,216 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+#singleGame {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    padding: 40px;
+    border-radius: 60px;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game-info {
+    display: flex;
+    gap: 1rem;
+}
+
+#score, #moves {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: bold;
+    background-color: rgb(50, 50, 50);
+    padding: 0.4rem 0.8rem;
+    color: white;
+    border-radius: 20px;
+}
+
+#singleGame .player-area {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgb(244, 236, 255);
+    width: max-content;
+    border: 2px solid rgb(64, 11, 124);
+    border-radius: 40px;
+    padding: 0.1rem 6rem 0.1rem 0.2rem;
+}
+
+.player-img {
+    width: 40px;
+    height: 40px;
+}
+
+.player-img img {
+    width: 100%;
+}
+
+#singlePlayerUsername {
+    font-size: 12px;
+    color: rgb(64, 11, 124);
+    text-transform: uppercase;
+}
+
+.single-game-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pers-card {
+    width: 140px;
+    height: 180px;
+    perspective: 600px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform-origin: center right;
+}
+
+.close-card {
+    position: absolute;
+    background-color: rgb(96, 85, 128);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.close-card::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: -40%;
+    transform: rotate(45);
+    width: 100%;
+    height: 140%;
+    background: rgba(255, 255, 255, 0.06);
+    filter: blur(2px);
+    transform: rotate(35deg);
+}
+
+.close-card .card-question-img {
+    width: 40px;
+    height: 40px;
+}
+
+.close-card .card-question-img img {
+    width: 100%;
+}
+
+.open-card {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: rgb(115, 255, 115);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.open-card-toggle {
+    display: flex;
+}
+
+.close-card-toggle {
+    display: none;
+}
+
+.open-card .card-img {
+    width: 60px;
+    height: 60px;
+}
+
+.open-card .card-img img {
+    width: 100%;
+}
+
+.card.cardFlip {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.start-close-card {
+    display: none;
+}
+
+.start-open-card {
+    display: flex;
+}
+
+#SuccessRate {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#endText {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+#stars {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-level {
+    margin-top: 2rem;
+    width: 160px;
+    height: 50px;
+    animation: translateNextLevel 2s ease-in-out infinite;
+}
+
+.next-level a {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 30px;
+}
+
+@keyframes translateNextLevel {
+    0%, 100% {
+        transform: translateY(-4px);
+    }
+    50% {
+        transform: translateY(4px);
+    }
+}
